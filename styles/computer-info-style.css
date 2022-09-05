@@ -1,0 +1,829 @@
+@font-face {
+    font-family: 'HelveticaNeune';
+    src: url(./fonts/HelveticaNeue.ttc);
+    font-style: normal;
+    font-weight: 500;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+select{
+    background-color:#EBEBEB;
+    font-size: 18px;
+    padding-left: 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    height: 50px;
+    width: 100%;
+}
+
+label{
+    font-family: 'HelveticaNeue';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 18px;
+}
+input{
+    width: 100%;
+    height: 50px;
+    border: 2px solid #8AC0E2;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+
+    /*-------------------------------------*/
+                /* ERROR STYLES */
+    /*-------------------------------------*/
+
+    .error-box-color{
+        border: 1.8px solid !important;
+        border-radius: 8px !important;
+        border-color: #E52F2F !important;
+    }
+    
+    .error-text-color{
+        color: #E52F2F !important;
+    }
+    
+    .radio-error{
+        margin-left: 14px;
+        max-height: 17px;
+    }
+    
+    .error-image{
+        border-color: #E52F2F !important;
+        background-color: #FFF1F1 !important;
+    }
+    
+    #img-problem{
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-bottom: 14px;
+        order: 3;
+    }
+
+    .disable{
+        display: none !important;
+    }
+
+    .disable-border{
+        border-style: none !important;
+    }
+
+    /*-------------------------------------*/
+                /* HEADING */
+    /*-------------------------------------*/
+
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+}
+
+/* სათაური */
+.heading_title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 31px;
+}
+
+/* ინფორმაციების ბოქსი */
+.info-div{
+    display: flex;
+    align-items: center;
+}
+
+/* თანამშრომლის ინფო */
+.info{
+    color: #000000;
+    font-weight: 700;
+    padding-bottom: 5px;
+    display: none;
+}
+
+/* ლეპტოპის მახასიათებლები */
+.laptop-info{
+    color: #000000;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+/* მთავარ გვერდზე დაბრუნების ღილაკი */
+.btn-link{
+    position: absolute;
+    left: 20px;
+}
+.back-button{
+    position: absolute;
+    margin-left: 10px;
+    top: 5px;
+}
+/* 2/2 */
+.paragraph-one{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color:#898989;
+}
+
+
+    /*-------------------------------------*/
+                /* SECTION ONE */
+    /*-------------------------------------*/
+
+
+.section-three-start{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-three-end{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+}
+
+
+
+.laptop-price-frame{
+    background-image: url(../img/geo-lari-vector.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    background-origin: content-box;
+}
+
+.img-upload {
+    display: none;
+}
+
+#img-change-upload{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#img-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+
+
+#prev{
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;  
+    min-height: -webkit-fill-available;
+    min-height: -moz-available;
+    border-radius: 8px;
+}
+
+
+#img-info-size{
+    margin-left: 0;
+}
+
+.img-properties{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-right: 5px;
+    color: #5F5F5F;
+}
+
+.img-upload-again {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 45px;
+    background-color: #62A1EB;
+    border-radius: 8px;
+    padding: 18px 60px;
+    cursor: pointer;
+    
+    height: 60px;
+}
+/*----------------------------------*/
+      /* LAPTOP INFO SECTION */
+/*----------------------------------*/
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f6f6f6;
+    margin-top: 18px;
+    
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+}
+
+.main-form{
+    width: 100%;
+}
+
+.laptop-info-section-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 18px;
+    width: 100%;
+    border-radius: 12px;
+}
+.photo-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 64vw;
+    margin-top: 29px;
+    border: 2px;
+    border-style: dashed;
+    border-color: #4386A9;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+}
+
+.photo-text{
+    margin: auto;
+    width: 146px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color:#4386A9;
+    text-align: center;
+}
+
+.photo-text-two{
+    display: none;
+}
+.input-box-field{
+    width: 95%;
+    margin-top: 15px;
+}
+.laptop-name-input-box{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 10px;
+}
+
+::placeholder{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6) ;
+}
+.input-paragraph{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: -5px;
+}
+
+.select-parent{
+    margin-top: 20px;
+}
+
+.photo-vector-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45px;
+    height: 40.5px;
+}
+
+/*----------------------------------*/
+  /* LAPTOP INFO SECTION PART TWO */
+/*----------------------------------*/
+
+.laptop-info-section-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 18px;
+    width: 100%;
+    
+    border-radius: 12px;
+}
+.section-two-box{
+    width: 95%;
+    margin-top: 15px;
+}
+.laptop-cpu-input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.laptop-cpu-input-box-alone{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+}
+.radio-container{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 23px;
+}
+.radio-container-alone{
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+    margin-left: 2.5%;
+    margin-top: 40px;
+}
+.laptop-storage-input{
+    width: 20px;
+    margin-top: 10px;
+    border: 2px;
+    border-color: #4386A9;
+}
+.laptop-storage-label{
+    margin-top: 10px;
+    font-size: 16px;
+    align-items: left;
+    vertical-align: center;
+}
+.checkbox-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+}
+.checkbox-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+}
+.laptop-storage-type{
+    position: absolute;
+    margin-top: 0;
+    font-family: 'HelveticaNeue';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #000000;
+}
+
+.img-info-left-part{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/*----------------------------------*/
+ /* LAPTOP INFO SECTION PART THREE */
+/*----------------------------------*/
+
+.laptop-info-section-three{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    margin-top: 18px;
+    width: 100%;
+    border-radius: 12px;
+    padding-bottom: 36px;
+}
+.section-three-box{
+    margin-top: 15px;
+}
+.laptop-sales-input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0px;
+}
+.laptop-sales-input-box-alone{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0px;
+}
+
+.laptop-condition-type{
+    position: absolute;
+    margin-top: 0;
+    font-family: 'HelveticaNeue';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #000000;
+}
+.laptop-condition-input{
+    width: 20px;
+    margin-top: 10px;
+    border: 2px;
+    border-color: #4386A9;
+}
+.laptop-condition-label{
+    margin-top: 10px;
+    font-size: 16px;
+    align-items: left;
+    vertical-align: center;
+}
+.buttons-box{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 151px;
+    width: 100%;
+    margin-top: 53px;
+}
+.next-button{
+    display: flex;
+    justify-content: center;
+    
+    height: 46px;
+    background-color: #62A1EB;
+    border-radius: 8px;
+}
+.inside-button{
+    background-color:  #62A1EB;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 219px;
+    height: 60px;
+    font-weight: 500;
+    line-height: 21.98px;
+}
+.back-link-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-link{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #62A1EB;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.second-logo{
+    display: none;
+}
+@media screen and (min-width:1075px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+        height: 100%;
+    }
+/*------------------------------------------*/
+      /*--------- HEADING ----------*/
+/*------------------------------------------*/
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #f6f6f6;
+        margin-right: 18%;
+    }
+    .laptop-info{
+        border-bottom: 2px solid black;
+    }
+    .info{
+        display: block;
+    }
+    .info-div{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+    .paragraph-one{
+        display: none;
+    }
+    .select-parent{
+        margin-top: 0px;
+        width: 48%;
+    }
+    .back-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 53px;
+        height: 53px;
+        border-radius: 50px;
+        background-color:#D9D9D9;
+        margin-top: -15px;
+        margin-left: 70px;
+    }
+    .btn-vector{
+        width: 9.21px;
+        height: 16px;
+    }
+
+    .img-upload {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        margin-top: 45px;
+        background-color: #62A1EB;
+        border-radius: 8px;
+        padding: 18px 60px;
+        cursor: pointer;
+        
+        height: 60px;
+    }
+
+    .img-properties{
+        display: flex;
+        flex-direction: row;
+        
+        gap: 5px;
+        margin-left: 5px;
+        color: #5F5F5F;
+    }
+
+/*------------------------------------------*/
+      /*--------- SECTIONS ----------*/
+/*------------------------------------------*/
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+    }
+    .laptop-info-section-two{
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        border-radius: 0px;
+    }
+    .laptop-info-section-three{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0px;
+        border-radius: 0 0 18px 18px;
+    }
+
+    .section-three-start{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 72%;
+    }
+
+    .section-three-end{
+        width: 72%;
+    }
+    
+
+/*------------------------------------------*/
+    /*--------- INSIDE SECTIONS ----------*/
+/*------------------------------------------*/
+
+    .photo-box{
+        width: 72%;
+        height: 22vw;
+    }
+    .photo-vector-img{
+        display: none;
+    }
+    .photo-text{
+        display: none;
+    }
+    .photo-text-two{
+        display: block;
+        margin: auto;
+        width: 192px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        color: #4386A9;
+    }
+    .upload-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        height: 60px;
+        font-size: 20px;
+        line-height: 24.42px;
+        font-weight: 500;
+        background-color: #62A1EB;
+        color: #ffffff;
+        border-radius: 8px;
+        margin-top: 43px;
+    }
+    .input-box-field{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 72%;
+        margin-top: 0;
+    }
+    .laptop-info-section-form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 65px;
+    }
+    .laptop-name-input-box{
+        width: 48%;
+        margin: 0;
+    }
+    #laptop-brand-dropdown{
+        width: 48%;
+        margin-top: 20px;
+    }
+    
+    #cpu-dropdown{
+        margin-top: 20px;
+    }
+    .laptop-info-select{
+       
+        margin-bottom: auto;
+    }
+    
+
+    .info-select{
+        
+        margin-bottom: auto;
+    }
+
+    #img-info-size{
+        margin-left: 18px;
+    }
+    .img-info{
+        width: 72%;
+    }
+/*------------------------------------------*/
+    /*------- INSIDE SECTIONS (CPU) -------*/
+/*------------------------------------------*/
+    .section-two-start{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .section-two-end{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .section-two-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 72%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .radio-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 62px;
+    }
+
+   
+    .laptop-cpu-input-box-alone{
+        width: 31%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #img-problem{
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-bottom: 14px;
+        order: 0;
+    }
+
+/*------------------------------------------*/
+    /*--- INSIDE SECTIONS (STORAGE) ---*/
+/*------------------------------------------*/
+
+    .section-three-box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 68px;
+        
+        padding: 0;
+        margin: 0;
+    }
+    .laptop-sales-input-box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 48%;
+    }
+    #cpu-dropdown{
+        width: 31%;
+    }
+
+    .laptop-cpu-input-box{
+        width: 31%;
+    }
+    .laptop-sales-input-box-alone{
+        display: flex;
+        margin-top: 27px;
+        width: 48%;
+    }
+    #ram{
+        width: 46%;
+    }
+    .laptop-info-sect-three{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
+    .radio-container-alone{
+        display: flex;
+        flex-direction: row;
+        margin-top: 36px;
+        margin-left: 14%;
+        gap: 60px;
+    }
+    .buttons-box{
+        margin-top: 0;
+        gap: 630px;
+    }
+    .next-button{
+        width: 219px;
+        height: 60px;
+    }
+    .second-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 46px;
+        margin-bottom: 10px;
+    }
+}

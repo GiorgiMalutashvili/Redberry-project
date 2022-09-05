@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/computer-info-style.css">
+    <title>Computer-info-page</title>
+</head>
+<body>
+    <div class="heading">
+        <div class="heading_title">
+            <div class="info-div">
+                <p class="info" onclick="document.getElementById('back-butt').click();">თანამშრომლის ინფო</p>
+                <p class="laptop-info">ლეპტოპის მახასიათებლები</p>
+            </div>
+            <p class="paragraph-one">2/2</p>
+            <a class="btn-link" href="./employees-info.html" id="back-butt">
+                <div class="back-button">
+                    <img class="btn-vector" src="./img/vector.png" href="index.html" alt="vector">
+                </div>
+            </a>
+        </div>
+
+        <section class="main-section">
+            <form class="main-form" onsubmit="return secondValidator()" action="./success.html">
+                <section class="laptop-info-section-one">
+                    <div class="photo-box" id="photo-box" onclick="mobileImgSelector()">
+                        <img class="disable" id="prev" src="" alt="" srcset="">
+                        <div id="img-input">
+                            <img class="disable" id="img-problem" src="./img/problem.png" alt="" srcset="">
+                            <img class="photo-vector-img" src="./img/photo-vector.png" alt="">
+                            <p class="photo-text" id="photo-text">ლეპტოპის ფოტოს ატვირთვა</p>
+                            <p class="photo-text-two" id="photo-text-two">ჩააგდე ან ატვირთე ლეპტოპის ფოტო</p>
+                            <label for="img-upload" class="img-upload">
+                                ატვირთე
+                            </label>
+                            <input name="img-upload" id="img-upload" type="file" onchange="imgPreview()" accept="image/png, image/jpeg"/>
+                        </div>
+                    </div>
+                    <div class="img-info disable" id="img-info">
+                        <div class="img-info-left-part">
+                            <img src="./img/pass.png" alt="" srcset="">
+                            <div class="img-properties">
+                                <p id="img-info-text">No File</p>
+                                <p id="img-info-size">0 mb</p>
+                            </div>
+                        </div>
+                        
+                        
+                        <label for="img-upload" class="img-upload-again" id="img-change-upload">
+                            თავიდან ატვირთე
+                        </label>
+                        <input name="img-upload-again" id="img-upload" type="file" onchange="imgPreview()" accept="image/png, image/jpeg"/>
+                        
+                    </div>
+                    
+                    <div class="input-box-field">
+                        <div class="laptop-name-input-box">
+                            <label>ლეპტოპის სახელი</label>
+                            <input class="laptop-name-frame" type="text" placeholder="HP" id="laptop_name" name="laptop-name" onchange="saveValue(this)">
+                            <p class="input-paragraph">ლათინური ასოები, ციფრები, !@#$%^&*()_+=</p>
+                        </div>
+                        <div class="select-parent" id="laptop-brand-dropdown">
+                            <select class="laptop-info-select" name="dropdown-menu" id="dropdown-laptop" onchange="saveValue(this)">
+                               <option value="laptop-brand">ლეპტოპის ბრენდი</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <section class="laptop-info-section-two">
+                    <div class="section-two-box">
+                        <div class="section-two-start">
+                            <div class="select-parent" id="cpu-dropdown">
+                                <select class="info-select" name="dropdown-menu" id="dropdown" onchange="saveValue(this)">
+                                    <option value="CPU">CPU</option>
+                                </select>
+                            </div>
+                            <div class="laptop-cpu-input-box">
+                                <label>CPU-ს ბირთვი</label>
+                                <input class="laptop-cpu-frame" type="number" placeholder="14" min="0" id="laptop-cpu-core" name="laptop-cpu-core" onchange="saveValue(this)">
+                                <p class="input-paragraph">მხოლოდ ციფრები</p>
+                            </div>
+                            <div class="laptop-cpu-input-box">
+                                <label>CPU-ს ნაკადი</label>
+                                <input class="laptop-cpu-frame" type="number" placeholder="365" min="0" id="laptop-cpu-thread" name="laptop-cpu-thread" onchange="saveValue(this)">
+                                <p class="input-paragraph">მხოლოდ ციფრები</p>
+                            </div>
+                        </div>
+                        <div class="section-two-end">
+                            <div class="laptop-cpu-input-box-alone" id="ram">
+                                <label>ლეპტოპის RAM (GB)</label>
+                                <input class="laptop-cpu-frame" type="number" placeholder="16" min="0" id="laptop-ram" name="laptop-ram" onchange="saveValue(this)">
+                                <p class="input-paragraph">მხოლოდ ციფრები</p>
+                            </div>
+                            <div class="radio-container">
+                                <p class="laptop-storage-type">მეხსიერების ტიპი <img class="radio-error disable" id="memory-type-error" src="./img/problem.png" alt="" srcset=""></p>
+                                
+                                <div class="checkbox-one">
+                                    <input class="laptop-storage-input" type="radio" id="SSD" name="radio-checkbox-type" onchange="saveValue(this)"/>
+                                    <label class="laptop-storage-label" for="SSD-laptop">SSD</label>
+                                </div>
+            
+                                <div class="checkbox-two">
+                                    <input class="laptop-storage-input" type="radio" id="HDD" name="radio-checkbox-type" onchange="saveValue(this)"/>
+                                    <label class="laptop-storage-label" for="HDD-laptop">HDD</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!---------- Laptop info section part three ----------->
+            
+                <section class="laptop-info-section-three">
+                   
+                        <div class="section-three-start">
+                            <div class="laptop-sales-input-box">
+                                <label>შეძენის რიცხვი (არჩევითი)</label>
+                                <input class="laptop-sale-frame" type="text" placeholder="დდ / თთ / წწწწ" id="laptop-sale" name="laptop-sale" onchange="saveValue(this)">
+                            </div>
+                            <div class="laptop-sales-input-box-alone">
+                                <label>ლეპტოპის ფასი</label>
+                                <input class="laptop-price-frame" type="number" placeholder="0000" min="0" id="laptop-price" name="laptop-price" onchange="saveValue(this)">
+                                
+                                <p class="input-paragraph">მხოლოდ ციფრები</p>
+                            </div>
+                        </div>
+                        
+                            <div class="radio-container-alone">
+                                <p class="laptop-condition-type">ლეპტოპის მდგომარეობა <img class="radio-error disable" id="state-type-error" src="./img/problem.png" alt="" srcset=""></p>
+                                <div class="checkbox-one">
+                                <input class="laptop-condition-input" value="new" type="radio" id="new" name="radio-checkbox" onchange="saveValue(this)"/>
+                                <label class="laptop-condition-label" for="new">ახალი</label>
+                            </div>
+                            <div class="checkbox-two">
+                                <input class="laptop-condition-input" value="used" type="radio" id="used" name="radio-checkbox" onchange="saveValue(this)"/>
+                                <label class="laptop-condition-label" for="used">მეორადი</label>
+                            </div>
+                            </div>
+                            <div class="section-three-end">     
+                                <a class="back-link" href="./employees-info.html">უკან</a>
+                            
+                                <button class="inside-button" type="submit">დამახსოვრება</button>
+                            </div>
+                            
+                </section>
+            </form>
+        </section>
+        <div class="second-logo">
+            <img class="second-logo-img" src="./img/second-logo.png" alt="">
+        </div>
+    </div>
+
+    <script src="./scripts_employees.js"></script>
+    <script src="./scripts_computer_info.js"></script>
+
+</body>
+</html>

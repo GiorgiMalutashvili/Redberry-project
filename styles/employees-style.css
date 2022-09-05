@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'HelveticaNeune';
+    src: url(./fonts/HelveticaNeue.ttc);
+    font-style: normal;
+    font-weight: 500;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+/* -------------------------------------- */
+       /* Employees heading button  */
+/* -------------------------------------- */
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+}
+
+/* სათაური */
+
+.heading_title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 31px;
+}
+
+/* ინფორმაციების ბოქსი */
+
+.info-div{
+    display: flex;
+    align-items: center;
+}
+
+/* თანამშრომლის ინფო */
+
+.info{
+    color: #000000;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+/* ლეპტოპის მახასიათებლები */
+
+.laptop-info{
+    display: none;
+}
+
+/* მთავარ გვერდზე დაბრუნების ღილაკი */
+
+.btn-link{
+    position: absolute;
+    left: 20px;
+}
+.back-button{
+    position: absolute;
+    margin-left: 10px;
+    top: 5px;
+}
+
+/* 1/2  */
+
+.paragraph-one{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color:#898989;
+}
+
+/*----------------------------------*/
+          /* MAIN SECTION */
+/*----------------------------------*/
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-top: 18px;
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+
+/* ინფუთების ბოქსი */
+
+.input-field{
+    margin-top: 15px;
+    margin-left: 4.1%;
+    margin-right: 4.1%;
+}
+
+/* სახელი/გვარი გაერთიანებული ბოქსი */
+
+.name-surname-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* სახელის ინფუთის ბოქსი */
+
+.name-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* გვარის ინფუთის ბოქსი */
+
+.surname-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* ლეიბლი - საერთო */
+label{
+    font-family: 'HelveticaNeue';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 18px;
+}
+
+/* ინფუთი - საერთო */
+
+input{
+    width: 100%;
+    height: 50px;
+    border: 2px solid #8AC0E2;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* ფლეისჰოლდერი - საერთო */
+
+::placeholder{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6) ;
+}
+
+/* ვალიდაციის ტექსტი */
+
+.input-paragraph{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: -5px;
+}
+
+/* დროფდაუნ მენიუ - საერთო */
+
+.dropdown{
+    margin-top: 35px;
+    border-radius: 8px;
+}
+
+select{
+    width: 100%;
+    height: 50px;
+    background-color:#EBEBEB;
+    font-size: 18px;
+    padding-left: 16px;
+    border-radius: 8px;
+}
+
+/* კონტაქტების ინფუთი */
+
+.contact-inputs{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+/* ღილაკი */
+
+.inside-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.84%;
+    height: 46px;
+    margin-top: 73px;
+    margin-left: 62.06%;
+    background-color: #62A1EB;
+    border-radius: 8px;
+    background-color:  #62A1EB;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.98px;
+    cursor: pointer;
+}
+
+/* რედბერის ლოგო */
+
+.second-logo{
+    display: none;
+}
+
+/* ვალიდაციის ბოქსები ჯავასკრიპტისთვის */
+
+.error-box-color{
+    border: 1.8px solid;
+    border-radius: 1px solid;
+    border-color: #E52F2F;
+}
+
+.error-text-color{
+    color: #E52F2F;
+}
+
+/* --------------------------------- */
+            /* @MEDIA */
+/* --------------------------------- */
+
+@media screen and (min-width:600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+
+
+    /* ინფო დივი */
+
+    .info-div{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        gap: 60px;
+    }
+
+    /* ბორდერი ინფო დივისთვის */
+
+    .info{
+        border-bottom: 2px solid black;
+    }
+
+    /* ლეპტოპის ინფო */
+
+    .laptop-info{
+        display: block;
+        color: #000000;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
+
+    /* 1/2 */
+
+    .paragraph-one{
+        display: none;
+    }
+
+    /* მთავარი სექცია */
+
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 72%;
+        margin-top: 22px;
+        margin-left: 13.07%;
+        border-radius: 18px;
+    }
+
+    /* ინფუთების ველი */
+
+    .input-field{
+        width: 72%;
+        margin-top: 41px;
+    }
+    
+    /* სახელი/გვარი საერთო ინფუთი */
+
+    .name-surname-inputs{
+        display: flex;
+        flex-direction: row;
+        gap: 6%;
+    }
+    /* სახელების ინფუთი */
+
+    .name-inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 47%;
+    }
+
+    /* გვარების ინფუთი */
+
+    .surname-inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 47%;
+    }
+    
+    /* დროფდაუნ მენიუ - საერთო */
+
+    .dropdown{
+        margin-top: 52px;
+    }
+
+    /* კონტაქტების ინფუთები */
+
+    .contact-inputs{
+        margin-top: 22px;
+    }
+    
+    /* ღილაკის ბოქსი */
+
+    .next-button{
+        width: 17%;
+        margin-left: 83%;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+    .inside-button{
+        font-size: 20px;
+        width: 100%;
+        height: 60px;
+        margin-left: 0;
+    }
+
+    /* ლოგო */
+
+    .second-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    /* უკან დასაბრუნებელი ღილაკი */
+
+    .back-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 53px;
+        height: 53px;
+        border-radius: 50px;
+        background-color:#D9D9D9;
+        margin-left: 3.64%px;
+    }
+    .btn-vector{
+        width: 9.21px;
+        height: 16px;
+    }
+}

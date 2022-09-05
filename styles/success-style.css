@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #4A4A4A;
+    max-width: 100%;
+    height: 100vh;
+}
+
+/*--------------------------------------------------*/
+                /* SUCCESS SECTION */
+/*--------------------------------------------------*/
+
+.success-sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.first-part{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second-part{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.success-text-box{
+    display: flex;
+    text-align: center;
+    width: 42%;
+    height: 10%;
+}
+
+.success-text{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 38.96px;
+    color: #292929;
+}
+
+/* ღილაკის ბოქსი */
+
+.btn-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 76%;
+    height: 25%;
+}
+.first-button{
+    background-color: #62A1EB;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn-text{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'HelveticaNeune';
+    font-weight: 500;
+    line-height: 24.42px;
+}
+
+/* უკან დასაბრუნებელი ღილაკი */
+
+.second-btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+.main-page-link{
+    font-family: 'HelveticaNeue';
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 24.42px;
+    color: #0089A7;
+    cursor: pointer;
+}
+@media screen and (min-width:600px) {
+    body{
+        display: flex;
+        justify-content: center;
+        background-color: #4A4A4A;
+        max-width: 100%;
+        height: 100vh;
+    }
+    .success-sect{
+        height: 100vh;
+    }
+    .first-part{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .second-part{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* მთავარი სექცია */
+
+    .success-sect{
+        margin: auto;
+        width: 54%;
+        height: 60%;
+        border-radius: 8px;
+    }
+
+    /* ფოტოს ბოქსი */
+
+    .success-box{
+        height: 80%;
+    }
+    .success-frame{
+        width: 100%;
+    }
+
+    /* ტექსტის ბოქსი */
+
+    .success-text-box {
+        display: flex;
+        justify-content: center;
+        width: 42%;
+        height: 30%;
+    }
+    .success-text{
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 38.96px;
+        color: #292929;
+    }
+
+    /* ღილაკების ბოქსი */
+
+    .btn-div{
+        width: 33%;
+        height: 27%;
+    }
+    .first-button{
+        width: 100%;
+        height: 100%;
+    }
+
+}

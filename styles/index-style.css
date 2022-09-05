@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'HelveticaNeune';
+    src: url(./fonts/HelveticaNeue.ttc);
+    font-style: normal;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+
+}
+
+/*--------------------------------------------------*/
+            /* redberry journey styles */
+/*--------------------------------------------------*/
+
+.redberry-journey{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+}
+/* ------------------------------------------------- */
+                    /* logo */
+/* ------------------------------------------------- */
+
+.photo-box{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redberry-logo{
+    margin-top: 67px;
+    margin-left: 35.65%;
+    margin-right: 35.65%;
+}
+
+/* --------------------------------------------------- */
+                        /* image */
+/* ------------------------------------------------- */
+
+.picture-box{
+    margin-top: 117px;
+}
+
+/* --------------------------------------------------- */
+                    /* buttons */
+/* ------------------------------------------------- */
+
+.btn-div{
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-top: 123.33px;
+}
+.first-button{
+    width: 358px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.42px;
+    gap: 20px;
+    font-family: 'Helvetica Neune';
+    border-radius: 8px;
+    background-color: #62A1EB;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.first-button:hover{
+    background-color: #317AD0;
+}
+.second-button{
+    width: 358px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.42px;
+    gap: 20px;
+    font-family: 'Helvetica Neune';
+    border-radius: 8px;
+    background-color: #62A1EB;
+    cursor: pointer;
+    margin-top: 16px;
+}
+a{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.42px;
+    gap: 20px;
+    font-family: 'Helvetica Neune';
+    color: #ffffff;
+}
+
+/*--------------------------------------------------*/
+        /* redberry journey styles for desktop */
+/*--------------------------------------------------*/
+
+@media screen and (min-width:768px){
+    body{
+        display: flex;
+        justify-content: center;
+        height: 1080px;
+    }
+    .redberry-journey{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 782px;
+    }
+    .main-icon{
+        display: none;
+    }
+    .picture-box{
+        background-image: url(../img/main-picture.png);
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 482px;
+        margin-left: -10px;
+    }
+    .main-icon{
+        display: none;
+    }
+    .btn-div{
+        margin-top: 141.37px;
+    }
+}

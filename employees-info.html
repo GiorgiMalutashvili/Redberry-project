@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/employees-style.css">
+    <title>employees-info</title>
+</head>
+
+<body>
+
+    <!---- Employees heading button ----->
+
+    <div class="heading">
+        <div class="heading_title">
+            <div class="info-div">
+                <p class="info">თანამშრომლის ინფო</p>
+                <p class="laptop-info" onclick="document.getElementById('next-butt').click();">ლეპტოპის მახასიათებლები</p>
+            </div>
+            <p class="paragraph-one">1/2</p>
+            <a class="btn-link" href="./index.html">
+                <div class="back-button">
+                    <img class="btn-vector" src="./img/vector.png" href="index.html" alt="vector">
+                </div>
+            </a>
+        </div>
+    <!---------- Main section ----------->
+        <section class="main-section">
+            <div class="input-field">
+                <form class="form" id="form" action="./computer-info.html" onsubmit="return validator()">
+                    <div class="name-surname-inputs">
+                        <div class="name-inputs">
+                            <label>სახელი</label>
+                            <input name="firstname" class="name-surname-frame" type="text" placeholder="გრიშა" id="username" onchange="saveValue(this)">
+                            <p class="input-paragraph">მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+                        </div>
+                        <div class="surname-inputs">
+                            <label>გვარი</label>
+                            <input name="lastname" class="name-surname-frame" type="text" placeholder="ბაგრატიონი" id="lastname" onchange="saveValue(this)">
+                            <p class="input-paragraph">მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <select name="dropdown-menu" id="dropdown-one" onchange="saveValue(this)">
+                            <option value="team">თიმი</option>
+                        </select>
+                    </div>
+
+                    <div class="dropdown">
+                        <select name="dropdown-menu" id="dropdown-two" onchange="saveValue(this)">
+                            <option value="position">პოზიცია</option>
+                        </select>
+                    </div>
+            
+                    <div class="contact-inputs">
+                        <label>მეილი</label>
+                        <input name="mail" type="text" placeholder="grish666@redberry.com" id="mail" onchange="saveValue(this)">
+                        <p class="input-paragraph">უნდა მთავრდებოდეს redberry.ge-ით</p>
+                    </div>
+                    <div class="contact-inputs">
+                        <label>ტელეფონის ნომერი</label>
+                        <input name="mobile-number" type="text" placeholder="+995 598 00 07 01" id="mobile-number" onchange="saveValue(this)">
+                        <p class="input-paragraph">ქართილი მობ-ნომრის ფორმატი</p>
+                    </div>
+                    <div class="next-button">
+                        <button class="inside-button" type="submit" id="next-butt">შემდეგი</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    <div class="second-logo">
+        <img class="second-logo-img" src="./img/second-logo.png" alt="">
+    </div>
+    </div>  
+    
+    <script src="./scripts_employees.js"></script>
+</body>
+
+</html>
