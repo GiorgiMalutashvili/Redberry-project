@@ -1,5 +1,5 @@
 /** ცვლადები */
-const TOKEN   = "8ce3c41f1d7b74c1179b2503f3e1f6fd"; //! ამას აქ თუ შეცვლით, script_last_page.js-სა და script_employees.js-შიც შეცვალეთ
+const TOKEN   = "0e5e6a87f991bb29ca8a9b2a4129247a"; //! ამას აქ თუ შეცვლით, script_last_page.js-სა და script_employees.js-შიც შეცვალეთ
 const schema  = document.getElementById("schema");
 const mainBox = document.getElementById("main-box");
 

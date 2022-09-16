@@ -1,5 +1,5 @@
 /** ცვლადები */
-const TOKEN   = "8ce3c41f1d7b74c1179b2503f3e1f6fd"; 
+const TOKEN   = "0e5e6a87f991bb29ca8a9b2a4129247a"; 
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 
